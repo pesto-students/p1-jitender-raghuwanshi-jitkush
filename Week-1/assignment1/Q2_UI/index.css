@@ -1,0 +1,88 @@
+body {
+    display:inline-flex;
+    overflow-x: hidden;
+    overflow-y:hidden; 
+}     
+
+     .nav {
+       background-color: hsl(0, 0%, 95%);
+       padding-left:15px;
+       padding-right:15px;
+       padding-top: 8px;
+       height:fit-content; 
+       width: fit-content;
+     }
+
+     ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    float:center;
+    }
+    li {
+        padding-top: 3px;
+        font-size:20px;
+        padding-bottom: 48px;
+        padding-top: 10px;
+    }
+
+    
+   nav a {
+      color: black;
+    }
+    nav a:hover {
+        color : blue;
+    }
+    
+    .catty{
+        background-color: rgb(97, 95, 95);
+        height:fit-content;
+        width:1500px;
+        float:right;
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom:10px;
+    }
+    
+
+    .p_list{
+     padding-left:40px;
+    }
+
+ table {
+     border-collapse: collapse;
+     border:none ;
+ }
+
+ table td {
+     padding-bottom:15px;
+     padding-left:230px;
+ }
+ 
+ table td:first-child {
+     padding-left:15px;
+ }
+
+ table td:last-child {
+    padding-right:100px;
+}
+
+.player {
+   
+        height:fit-content;
+        width:1500px;
+        float:right;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+ 
+}
+
+.footer {
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:fit-content;
+    background-color: rgb(62, 62, 247);
+}
+
