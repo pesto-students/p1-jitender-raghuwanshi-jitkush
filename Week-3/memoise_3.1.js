@@ -3,9 +3,11 @@ function memoize(fn) {
     return function (... args) {
     const key = args.toString();
     if (cache.has(key)) {
-    return cache.get(key);
+        console.log(cache);
+    return cache.get(key);   
     }
     cache.set(key, fn(... args));
+    console.log(cache);
     return cache.get(key);
 };
 }
