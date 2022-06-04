@@ -100,7 +100,7 @@ class LinkedList {
     }
     reverse() {
         let firstNode = this.head;
-        let firstNextNode = this.head.next;
+        //let firstNextNode = this.head.next;
         let lastNode = this.tail;
         let lastPreviousNode = this.tail.previous;
         let x = 1;
@@ -120,6 +120,7 @@ class LinkedList {
            lastNode = lastPreviousNode;
            lastPreviousNode = lastPreviousNode.previous;
            x++;
+           this.print();
         }
         this.tail = lastNode;
         this.print();

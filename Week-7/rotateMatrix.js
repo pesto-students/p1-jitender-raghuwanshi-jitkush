@@ -139,7 +139,8 @@ list.append(50)
 list.append(60)
 console.log(list.length);
 list.print();
-list.rotate(4);
+list.rotate(8);
 
+//iteration check; we can dn tneed to rotate 8 time;
 
  

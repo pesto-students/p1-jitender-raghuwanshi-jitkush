@@ -21,5 +21,5 @@ const parenthesisChecker = (bracket) => {
 }
 
 
-let par= `[][][]}{`;
+let par= `[()][][]}{`;
 parenthesisChecker(par);

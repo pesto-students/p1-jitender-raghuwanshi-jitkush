@@ -124,7 +124,7 @@ class LinkedList {
             return flag;
         }
 
-        console.log(flag);
+        console.log(`/n` +flag);
     }
 
 }
