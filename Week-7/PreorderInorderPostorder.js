@@ -19,6 +19,7 @@ class BinarySearchTree {
         let newNode = new Node(value);
         if(!this.root) {
             this.root = newNode;
+            console.log(this.root);
             return this;
         }
 
@@ -28,9 +29,10 @@ class BinarySearchTree {
             else if( value < currentNode.value){
                 if(currentNode.left == null) {
                     currentNode.left = newNode;
-                    return this;
+                    return this;       
                 }
                 currentNode = currentNode.left;
+                console.log(currentNode)
             }
             else if(value > currentNode.value) {
                 if(currentNode.right == null) {
@@ -38,6 +40,7 @@ class BinarySearchTree {
                     return this;
                 }
                 currentNode = currentNode.right;
+                console.log(currentNode)
             }
             else {
                 return `duplicate value`;
@@ -66,14 +69,27 @@ class BinarySearchTree {
             }
         }
     }
+
+            //              50
+           //         /           \
+           //        25             75
+           //      /   \          /   \
+        //       10     30      60      90
+        //      / \    /  \    /  \    /  \
+        //     5   15 28  35  55  65  80   100
     
     preOrder(root){
         if(!root){
             return;
         }
         this.preOrderArray.push(root.value);
+
         this.preOrder(root.left)
+
         this.preOrder(root.right);
+
+        console.log(root)
+        console.log()
     }
 
     callPreOrder(){
@@ -114,17 +130,28 @@ class BinarySearchTree {
 
 const tree = new BinarySearchTree();
 tree.insert(50);
-tree.search(75)
+tree.insert(75);
 tree.insert(25);
 tree.insert(30);
-tree.insert(75);
 tree.insert(10);
 tree.insert(60);
 tree.insert(90);
 tree.insert(90);
-console.log(`88888888888888888888888888888888`);
-console.log(tree.callPreOrder())
-console.log(`88888888888888888888888888888888`);
-console.log(tree.callinOrder())
-console.log(`88888888888888888888888888888888`);
-console.log(tree.callpostOrder())
+tree.insert(5);
+tree.insert(15);
+tree.insert(28);
+tree.insert(35);
+tree.insert(55);
+tree.insert(65);
+tree.insert(80);
+tree.insert(100);
+
+
+
+
+
+           //          50
+           //        /    \
+           //       25     75
+           //      / \    / \
+        //        10 30  60  90
