@@ -23,8 +23,10 @@ const bestBuyDay = (price) => {
     }
 
     console.log(currBuyDay , currSellDay+ `     ` + tempMaxProfit + `   currentprofit  `+ tempDifference)
-    console.log(   `****buy date****     ` +    currBuyDay + `   ****price****    `+price[(currBuyDay - 1 )]+ `    ****sell day****        ` + currSellDay +`     ****price****   `+price[(currSellDay - 1)
-    ] +`       $$totalProfitEarned$$        ` + tempMaxProfit)
+    console.log(   `****buy date****   ` +    currBuyDay + `  ****price****    `+price[(currBuyDay - 1 )]+ `
+****sell day****   ` + currSellDay +`  ****price****    `+price[(currSellDay - 1)
+    ] +`
+    $$totalProfitEarned$$        ` + tempMaxProfit)
 
 
 }

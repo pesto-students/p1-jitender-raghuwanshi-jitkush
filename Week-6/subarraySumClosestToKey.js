@@ -1,8 +1,8 @@
 const findSum = (arr, key) => {
     len = arr.length;
     prevTempDiff = Infinity ; 
-    nextTempDiff = 0 ;
-    tempMaxDiff = 0 ;
+    currentTempDiff = 0 ;
+
     for ( i = 0 ; i < len - 3 ; i++) {
         for( j = 1 ; j < len - 2 ; j ++) {
             if(i === j){
@@ -18,16 +18,16 @@ const findSum = (arr, key) => {
                             return [subArray ,  0]
                         }
                         else if( sumOfSubArray < key) {
-                            nextTempDiff = key - sumOfSubArray;
+                            currentTempDiff = key - sumOfSubArray;
                         }
                         else {
-                            nextTempDiff = sumOfSubArray - key;
+                            currentTempDiff = sumOfSubArray - key;
                         }
-                    if (prevTempDiff > nextTempDiff) {
-                        prevTempDiff = nextTempDiff;
+                    if (prevTempDiff > currentTempDiff) {
+                        prevTempDiff = currentTempDiff;
                         subArray = [arr[i],arr[j],arr[k]]
                     }
-                    else if (prevTempDiff < nextTempDiff){
+                    else if (prevTempDiff < currentTempDiff){
                         continue;
                     }
                 }

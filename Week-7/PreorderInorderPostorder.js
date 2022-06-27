@@ -19,7 +19,7 @@ class BinarySearchTree {
         let newNode = new Node(value);
         if(!this.root) {
             this.root = newNode;
-            console.log(this.root);
+           //console.log(this.root);
             return this;
         }
 
@@ -32,7 +32,7 @@ class BinarySearchTree {
                     return this;       
                 }
                 currentNode = currentNode.left;
-                console.log(currentNode)
+                //console.log(currentNode)
             }
             else if(value > currentNode.value) {
                 if(currentNode.right == null) {
@@ -40,7 +40,7 @@ class BinarySearchTree {
                     return this;
                 }
                 currentNode = currentNode.right;
-                console.log(currentNode)
+                //console.log(currentNode)
             }
             else {
                 return `duplicate value`;
@@ -146,7 +146,7 @@ tree.insert(65);
 tree.insert(80);
 tree.insert(100);
 
-
+console.log(tree.callinOrder())
 
 
 
