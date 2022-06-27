@@ -1,0 +1,95 @@
+body {
+    overflow-y: scroll;
+    font-family: 'Times New Roman', Times, serif;
+    text-justify: inter-word;
+}
+
+.header {
+   text-align:center;
+}
+
+section > img {
+    height:450px;
+    width:100%;
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:fit-content;
+    padding:4px;
+}
+
+.left {
+    max-width:48%;
+    height: fit-content;
+    font-size: large;
+    
+}
+
+.right { 
+    max-width:48%;
+    height:fit-content;
+    padding-top:1rem; 
+    font-size: large;  
+   
+}
+
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+      max-width: 100%;
+    }
+  }
+
+.destination {
+    font-size: 1.2rem;
+}
+.cards > img {
+    float:right;
+    width:20em;
+    height:13em;
+}
+
+.form_a {
+    width:90%;
+    height:fit-content;
+    background-color: antiquewhite;
+    padding-left:9px;  
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .labe {
+    float: left;
+    width: 30%;
+    margin-top: 4px;
+  }
+  
+  .fiel {
+    float: left;
+    width: 70%;
+    margin-top: 4px;
+  }
+  input[type=text]:hover {
+    border: 1.5px thick rgb(159, 157, 157);
+  }
+
+  input[type=email]:hover {
+    border: 1.5px thick rgb(159, 157, 157);
+  }
+
+  input[type=password]:hover {
+    border: 1.5px thick rgb(159, 157, 157);
+  }
+
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
