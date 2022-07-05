@@ -1,0 +1,35 @@
+.room{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.button{
+    width:30vh;
+    text-align: center;
+    align-self: center;
+    border-radius: 1vh;
+    height: 5vh;
+}
+
+.light{
+    background-color: yellow;
+    color: black;
+}
+
+.dark{
+    background-color: rgb(71, 62, 62);
+    color:white;
+}
+
+.light > button:hover {
+    background-color: rgb(71, 62, 62);
+    color: white;
+}
+
+.dark > button:hover{
+    background-color: yellowgreen;
+    color: black;
+}

@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  height: fit-content;
+}
+
+header{
+  background-color: blue;
+  color: white;
+  border:1px solid black;
+  height: 10vh;
+  padding-top: 6vh;
+  font-size: xx-large;
+  text-shadow: 0ch;
+}
+
+footer{
+  height: 10vh;
+  background-color: grey;
+  padding-top: 5vh;
+}
+.urlTitle{
+padding-top:8vh;
+font-size: 5vh;
+}
+
+.output{
+  height: 25vh;
+  padding-top: 30vh;
+  padding-bottom: 1vh;
+}
+
+.input{
+  border:2px solid black;
+  border-radius: 0.5vh;
+  width: 30vh;
+  height: 3vh;
+  padding-right: 5vh;
+  margin-right: 2vh;
+}
+
+
+.button{
+  border-radius: 0.5vh;
+  height: 4vh;
+}
+.button:hover{
+  opacity: 1.5;
+  background-color: antiquewhite;
+}
+.longurl{
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 3vh;
+}
+
+.inner{
+  border:5px solid black;
+  justify-items: center;
+  padding: 3vh;
+  border-radius: 3vh;
+}
+
+.outputBox{
+  border: 3px solid rgb(38, 40, 112);
+  width: 50vh;
+  border-radius: 0.8vh;
+  height: 4vh;
+  font-size: large;
+}
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to { 
+      transform: rotate(360deg);
+  }
+}
+
+
+@-webkit-keyframes rotate {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to { 
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+.load {
+z-index: 100;
+width: 2vh;
+height: 2vh;
+margin: 110px auto 0;
+border:solid 10px #8822aa;
+border-radius: 50%;
+border-right-color: transparent;
+border-bottom-color: transparent;
+ -webkit-transition: all 0.5s ease-in;
+  -webkit-animation-name:             rotate; 
+  -webkit-animation-duration:         1.0s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-animation-timing-function: linear;
+    
+     transition: all 0.5s ease-in;
+  animation-name:             rotate; 
+  animation-duration:         1.0s; 
+  animation-iteration-count:  infinite;
+  animation-timing-function: linear; 
+}
